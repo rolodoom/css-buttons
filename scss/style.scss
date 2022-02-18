@@ -1,0 +1,19 @@
+$primary: #d1ba83;
+$black: #333;
+
+:root {
+	font-size: 62.5%;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
