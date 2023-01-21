@@ -1,7 +1,10 @@
 # CSS Buttons
 
 A collection of some CSS buttons. SCSS files included.
+
 [DEMO](https://css-buttons-rolodoom.netlify.app/)
+
+![Screenshot](screenshot.png "Screenshot")
 
 ## Buttons
 
