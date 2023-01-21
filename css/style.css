@@ -1,1 +1,155 @@
-:root{font-size:62.5%;font-family:Roboto,Arial,Helvetica,sans-serif}html,body{margin:0;padding:0;width:100%;height:100vh;display:flex;flex-flow:row wrap;justify-content:center;align-items:center}.button{margin:1.5rem}.button-01{font-size:1.5rem;padding:.7rem 3rem;cursor:pointer;text-decoration:none;color:#d1ba83;position:relative;overflow:hidden;z-index:1}.button-01::after{display:block;content:"";background-color:#d1ba83;height:1px;width:100%;transition:all .2s ease-in-out;margin-top:.5rem;z-index:-2;position:absolute;bottom:0;left:0}.button-01:hover{color:#333}.button-01:hover::after{width:0%;background-color:#333}.button-02{font-size:1.5rem;padding:.7rem 3rem;cursor:pointer;text-decoration:none;display:inline-block;border-radius:10rem;color:#fff;transition:all .3s;position:relative;overflow:hidden;z-index:1}.button-02:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:100%;background-color:#d1ba83;border-radius:10rem;z-index:-2}.button-02:before{content:"";position:absolute;bottom:0;left:0;width:0%;height:100%;background-color:#bc9b4b;transition:all .3s;border-radius:10rem;z-index:-1}.button-02:hover{color:#fff}.button-02:hover:before{width:100%}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+:root {
+  font-size: 62.5%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+/* 
+========================
+	Button 01
+========================
+*/
+.button-01 {
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #8b5fbf;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+}
+.button-01::after {
+  display: block;
+  content: "";
+  background-color: #8b5fbf;
+  height: 1px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  margin-top: 0.5rem;
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.button-01:hover {
+  color: #efefef;
+}
+.button-01:hover::after {
+  width: 0%;
+  background-color: #efefef;
+}
+
+/* 
+========================
+    Button 02
+========================
+*/
+.button-02 {
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  z-index: 1;
+  background-color: transparent;
+}
+.button-02:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8b5fbf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button-02:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #653c96;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button-02:hover {
+  color: #fff;
+}
+.button-02:hover:before {
+  width: 100%;
+}
+
+/* 
+========================
+    Button 03
+========================
+*/
+.button-03 {
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  background: black;
+  color: #efefef;
+  padding: 1.2rem 5rem;
+  position: relative;
+  border-radius: 1.2rem;
+}
+.button-03:hover {
+  color: #efefef;
+  background-color: #111;
+}
+.button-03::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+  background-size: 800%;
+  border-radius: 1rem;
+  filter: blur(0.8rem);
+  animation: glowing 20s linear infinite;
+}
