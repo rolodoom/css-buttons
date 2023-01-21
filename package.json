@@ -1,0 +1,24 @@
+{
+	"name": "css-buttons",
+	"version": "1.0.0",
+	"description": "Collection of CSS buttons",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "sass --watch scss/:css/ --no-source-map"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rolodoom/css-buttons.git"
+	},
+	"keywords": [
+		"buttons",
+		"css",
+		"scss"
+	],
+	"author": "rolodoom",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rolodoom/css-buttons/issues"
+	},
+	"homepage": "https://github.com/rolodoom/css-buttons#readme"
+}
