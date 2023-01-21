@@ -2,7 +2,7 @@
 
 A collection of some CSS buttons. SCSS files included.
 
-# DEMO
+## DEMO
 
 [Here](https://css-buttons-rolodoom.netlify.app/) you can preview the buttons on Netlify.
 
