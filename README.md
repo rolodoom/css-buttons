@@ -22,10 +22,6 @@ A collection of some CSS buttons. SCSS files included.
 
 Have a bug or an issue with this template? [Open a new issue](https://github.com/rolodoom/css-buttons/issues) here on GitHub.
 
-## About
-
-This code is released under the [MIT](https://raw.githubusercontent.com/rolodoom/css-buttons/master/LICENSE) license, which means you can use it for any purpose, even for commercial projects.
-
 ## License
 
-Code released under the [MIT](https://raw.githubusercontent.com/rolodoom/css-buttons/master/LICENSE) license.
+This code is released under the [MIT](https://raw.githubusercontent.com/rolodoom/css-buttons/master/LICENSE) license, which means you can use it for any purpose, even for commercial projects.
