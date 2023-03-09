@@ -24,4 +24,4 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## License
 
-This code is released under the [MIT](https://raw.githubusercontent.com/rolodoom/css-buttons/master/LICENSE) license, which means you can use it for any purpose, even for commercial projects.
+This code in this repository is released under the [MIT](https://raw.githubusercontent.com/rolodoom/css-buttons/master/LICENSE) license, which means you can use it for any purpose, even for commercial projects. In other words, do what you want with it. The only requirement with the MIT License is that the license and copyright notice must be provided with the software.
