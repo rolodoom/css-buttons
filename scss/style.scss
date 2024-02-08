@@ -5,26 +5,26 @@ $black: #111;
 @import "./animations";
 
 :root {
-	font-size: 62.5%;
-	font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	background-color: $black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
 }
 
 .buttons {
-	display: flex;
-	flex-flow: column nowrap;
-	gap: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
 }
 
 /* 
@@ -33,39 +33,39 @@ body {
 ========================
 */
 .button-01 {
-	font-size: 1.5rem;
-	padding: 0.7rem 3rem;
-	cursor: pointer;
-	text-decoration: none;
-	color: $primary;
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-	background-color: transparent;
-	border: none;
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: $primary;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
 
-	&::after {
-		display: block;
-		content: "";
-		background-color: $primary;
-		height: 1px;
-		width: 100%;
-		transition: all 0.2s ease-in-out;
-		margin-top: 0.5rem;
-		z-index: -2;
+  &::after {
+    display: block;
+    content: "";
+    background-color: $primary;
+    height: 1px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    margin-top: 0.5rem;
+    z-index: -2;
 
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-	&:hover {
-		color: $white;
-		&::after {
-			width: 0%;
-			background-color: $white;
-		}
-	}
+  &:hover {
+    color: $white;
+    &::after {
+      width: 0%;
+      background-color: $white;
+    }
+  }
 }
 
 /* 
@@ -74,51 +74,51 @@ body {
 ========================
 */
 .button-02 {
-	font-size: 1.5rem;
-	padding: 0.7rem 3rem;
-	cursor: pointer;
-	text-decoration: none;
-	display: inline-block;
-	border-radius: 10rem;
-	color: #fff;
-	transition: all 0.3s;
-	position: relative;
-	overflow: hidden;
-	border: none;
-	z-index: 1;
-	background-color: transparent;
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10rem;
+  color: $white;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  z-index: 1;
+  background-color: transparent;
 
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: $primary;
-		border-radius: 10rem;
-		z-index: -2;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    border-radius: 10rem;
+    z-index: -2;
+  }
 
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		background-color: darken($primary, 15%);
-		transition: all 0.3s;
-		border-radius: 10rem;
-		z-index: -1;
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($primary, 15%);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
 
-	&:hover {
-		color: #fff;
-		&:before {
-			width: 100%;
-		}
-	}
+  &:hover {
+    color: $white;
+    &:before {
+      width: 100%;
+    }
+  }
 }
 
 /* 
@@ -127,42 +127,42 @@ body {
 ========================
 */
 .button-03 {
-	cursor: pointer;
-	border: none;
-	font-size: 1.5rem;
-	background: black;
-	color: $white;
-	padding: 1.2rem 5rem;
-	position: relative;
-	border-radius: 1.2rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  background: $black;
+  color: $white;
+  padding: 1.2rem 5rem;
+  position: relative;
+  border-radius: 1.2rem;
 
-	&:hover {
-		color: $white;
-		background-color: #111;
-	}
+  &:hover {
+    color: $white;
+    background-color: $black;
+  }
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(
-			45deg,
-			red,
-			blue,
-			deeppink,
-			blue,
-			red,
-			blue,
-			deeppink,
-			blue
-		);
-		background-size: 800%;
-		border-radius: 1rem;
-		filter: blur(0.8rem);
-		animation: glowing 20s linear infinite;
-	}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      45deg,
+      red,
+      blue,
+      deeppink,
+      blue,
+      red,
+      blue,
+      deeppink,
+      blue
+    );
+    background-size: 800%;
+    border-radius: 1rem;
+    filter: blur(0.8rem);
+    animation: glowing 20s linear infinite;
+  }
 }
